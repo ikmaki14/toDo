@@ -8,15 +8,15 @@
 
 import UIKit
 
-class ToDoTableViewController: UITableViewController {
+class ToDoTableViewController: UITableViewController { // add file in iteration 0
     
-//    var toDos : [ToDo] = [] // used until iteration 2
+//    var toDos : [ToDo] = [] // created in iteration 0 & used until iteration 2
     var toDos : [ToDoCD] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        toDos = createToDos() // used until iteration 2
+//        toDos = createToDos() // created in iteration 0 & used until iteration 2
 //        getToDos() // keep for a bit during iteration 2
     }
     
@@ -25,26 +25,28 @@ class ToDoTableViewController: UITableViewController {
         getToDos()
     }
 
+    // added in iteration 0
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return toDos.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) // added in iteration 0
         
-        let toDo = toDos[indexPath.row]
+        let toDo = toDos[indexPath.row] // added in iteration 0
         
         // add the outside if statement in iteration 3
         if let name = toDo.name {
+            // added in iteration 0
             if toDo.important {
-                cell.textLabel?.text = "❗️" + name // previously toDo.name
+                cell.textLabel?.text = "❗️" + name // toDo.name in iteration 0
             } else {
                 cell.textLabel?.text = toDo.name
             }
         }
 
-        return cell
+        return cell // added in iteration 0
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -72,7 +74,7 @@ class ToDoTableViewController: UITableViewController {
     }
     
     /*
-    // used until iteration 2
+    // created in iteration 0 & used until iteration 2
     func createToDos() -> [ToDo] {
         
         let swift = ToDo()

@@ -8,19 +8,19 @@
 
 import UIKit
 
-class AddToDoViewController: UIViewController {
+class AddToDoViewController: UIViewController { // add file in iteration 1
     
     var previousVC = ToDoTableViewController()
 
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var importantSwitch: UISwitch!
+    @IBOutlet weak var titleTextField: UITextField! // add in iteration 1
+    @IBOutlet weak var importantSwitch: UISwitch! //
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     // may take a moment for the ToDoCD() to work (may have to restart xcode)
-    @IBAction func addTapped(_ sender: Any) {
+    @IBAction func addTapped(_ sender: Any) { // add in iteration 1
         
         // we have to grab this view context to be able to work with Core Data
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {

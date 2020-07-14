@@ -55,18 +55,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mce-sf-den">
-                                <rect key="frame" x="184" y="368" width="50" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="5U0-kG-KxX"/>
-                                    <constraint firstAttribute="width" constant="50" id="mRQ-j4-tTC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="doneTapped:" destination="Oso-vW-yPn" eventType="touchUpInside" id="pzp-kL-2RH"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWK-QS-XOf">
                                 <rect key="frame" x="57" y="245" width="300" height="48"/>
                                 <constraints>
@@ -77,16 +65,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mce-sf-den">
+                                <rect key="frame" x="177" y="368" width="60" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4rJ-Kk-3ex"/>
+                                    <constraint firstAttribute="height" constant="36" id="Zp9-Ow-MWX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="doneTapped:" destination="Oso-vW-yPn" eventType="touchUpInside" id="pzp-kL-2RH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="joQ-cj-6S1" firstAttribute="trailing" secondItem="pWK-QS-XOf" secondAttribute="trailing" constant="57" id="1BD-su-J7l"/>
-                            <constraint firstItem="joQ-cj-6S1" firstAttribute="bottom" secondItem="mce-sf-den" secondAttribute="bottom" constant="458" id="2Ap-Bc-gzW"/>
-                            <constraint firstItem="joQ-cj-6S1" firstAttribute="trailing" secondItem="mce-sf-den" secondAttribute="trailing" constant="180" id="Hct-ZA-S3P"/>
-                            <constraint firstItem="mce-sf-den" firstAttribute="leading" secondItem="joQ-cj-6S1" secondAttribute="leading" constant="184" id="QQX-Zn-Pc3"/>
-                            <constraint firstItem="pWK-QS-XOf" firstAttribute="leading" secondItem="joQ-cj-6S1" secondAttribute="leading" constant="57" id="row-DB-ktc"/>
-                            <constraint firstItem="mce-sf-den" firstAttribute="top" secondItem="pWK-QS-XOf" secondAttribute="bottom" constant="75" id="tf9-lD-qx0"/>
-                            <constraint firstItem="pWK-QS-XOf" firstAttribute="top" secondItem="joQ-cj-6S1" secondAttribute="top" constant="157" id="yig-Y0-aYE"/>
+                            <constraint firstItem="mce-sf-den" firstAttribute="leading" secondItem="joQ-cj-6S1" secondAttribute="leading" constant="177" id="3VM-6H-ElU"/>
+                            <constraint firstItem="joQ-cj-6S1" firstAttribute="trailing" secondItem="pWK-QS-XOf" secondAttribute="trailing" constant="57" id="FCF-m0-QSa"/>
+                            <constraint firstItem="pWK-QS-XOf" firstAttribute="leading" secondItem="joQ-cj-6S1" secondAttribute="leading" constant="57" id="GQU-aL-wdn"/>
+                            <constraint firstItem="pWK-QS-XOf" firstAttribute="top" secondItem="joQ-cj-6S1" secondAttribute="top" constant="157" id="XwC-Qs-XDu"/>
+                            <constraint firstItem="joQ-cj-6S1" firstAttribute="bottom" secondItem="mce-sf-den" secondAttribute="bottom" constant="458" id="jFC-aF-enn"/>
+                            <constraint firstItem="mce-sf-den" firstAttribute="top" secondItem="pWK-QS-XOf" secondAttribute="bottom" constant="75" id="oYN-Xx-Hpf"/>
+                            <constraint firstItem="joQ-cj-6S1" firstAttribute="trailing" secondItem="mce-sf-den" secondAttribute="trailing" constant="177" id="p8p-Qg-mne"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="joQ-cj-6S1"/>
                     </view>
